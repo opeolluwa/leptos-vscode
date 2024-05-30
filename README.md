@@ -1,72 +1,79 @@
-# leptos README
+ # Leptos Vs Code Extension
 
-This is the README for your extension "leptos". After writing up a brief description, we recommend including the following sections.
+- [Description](#description)
+- [Getting Started](#getting-started)
+  - [Dependencies](#dependencies)
+  - [Installing](#installing)
+  - [Executing program](#executing-program)
+- [Documentation](#documentation)
+- [Help](#help)
+- [Authors](#authors)
+- [Version History](#version-history)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-## Features
+## Description
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Vs code support for [Leptos](https://leptos.dev) web framework
 
-For example if there is an image subfolder under your extension project workspace:
+## Getting Started
 
-\!\[feature X\]\(images/feature-x.png\)
+## Roadmap
+- [ ] Initialize a starter project 
+- [ ] Auto format with rust-analyzer and leptosfmt
+- [ ] Snippet Support 
+- [ ] Refactor Project and extract component (code splitting)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Dependencies
 
-## Requirements
+- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+- ex. Windows 10
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Installing
 
-## Extension Settings
+- How/where to download your program
+- Any modifications needed to be made to files/folders
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Executing program
 
-For example:
+- How to run the program
+- Step-by-step bullets
 
-This extension contributes the following settings:
+```
+code blocks for commands
+```
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Documentation
 
-## Known Issues
+Describe any special instructions that are necessary to install a software package on your computer (if applicable).
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Help
+Any advice for common problems or issues.
 
-## Release Notes
+```
+command to run if program contains helper info
+```
 
-Users appreciate release notes as you update your extension.
+## Authors
 
-### 1.0.0
+Contributors names and contact info
 
-Initial release of ...
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-### 1.0.1
+## Version History
 
-Fixed issue #.
+- 0.2
+  - Various bug fixes and optimizations
+  - See [commit change]() or See [release history]()
+- 0.1
+  - Initial Release
 
-### 1.1.0
+## License
 
-Added features X, Y, and Z.
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
----
+## Acknowledgments
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-# leptos-vscode
+Inspiration, code snippets, etc.
+        
