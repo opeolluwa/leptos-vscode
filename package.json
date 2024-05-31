@@ -2,9 +2,13 @@
   "name": "leptos",
   "displayName": "leptos-vscode",
   "description": "Vs Code support for leptos framework ",
-  "version": "0.0.1",
+  "publisher": "opeolluwa",
+  "version": "0.0.2",
+  "icon": "assets/icon.png",
+  "repository": "https://github.com/opeolluwa/leptos-vscode",
+  "license": "MIT",
   "engines": {
-    "vscode": "^1.89.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
@@ -14,8 +18,30 @@
   "contributes": {
     "commands": [
       {
-        "command": "leptos.helloWorld",
-        "title": "Hello World"
+        "command": "leptos.init",
+        "title": "Init",
+        "category": "Leptos"
+      },
+      {
+        "command": "leptos.dev",
+        "title": "Dev",
+        "category": "Leptos"
+      },
+      {
+        "command": "leptos.build",
+        "title": "Build",
+        "category": "Leptos"
+      },
+      {
+        "command": "leptos.fmt",
+        "title": "Format",
+        "category": "leptos"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "rust",
+        "path": "./snippets/rust.json"
       }
     ]
   },
@@ -34,7 +60,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.89.0",
+    "@types/vscode": "^1.5.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
