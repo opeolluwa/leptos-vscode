@@ -9,14 +9,16 @@
     ],
     "description": "Create a new leptos component"
   },
-  "Create a server side function": {
+  "Create a server side component": {
     "prefix": ["server", "#[server], #[leptos::server]"],
     "body": [
       "#[leptos::server(${1:function_name}, ${2:endpoint})]",
-      "pub async fn(data:T)  -> Result<(), ServerFnError> {",
+
+      "pub async fn ${3:function_name}(data:T)  -> Result<(), ServerFnError> {",
       "   println!(\"{:#?}\", data)",
+
       "}"
     ],
-    "description": "Create a server side funtion "
+    "description": "Create a server side function"
   }
 }
