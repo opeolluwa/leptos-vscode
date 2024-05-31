@@ -1,0 +1,22 @@
+{
+  "Create a new inline client side component": {
+    "prefix": ["component", "#[component], #[leptos::component]"],
+    "body": [
+      "#[leptos::component]",
+      "pub fn ${1:component_name}() -> impl leptos::IntoView {",
+      "  view!{ }",
+      "}"
+    ],
+    "description": "Create a new leptos component"
+  },
+  "Create a server side function": {
+    "prefix": ["server", "#[server], #[leptos::server]"],
+    "body": [
+      "#[leptos::server(${1:function_name}, ${2:endpoint})]",
+      "pub async fn(data:T)  -> Result<(), ServerFnError> {",
+      "   println!(\"{:#?}\", data)",
+      "}"
+    ],
+    "description": "Create a server side funtion "
+  }
+}
