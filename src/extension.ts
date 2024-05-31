@@ -1,26 +1,65 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import commandExists from "command-exists";
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+
 export function activate(context: vscode.ExtensionContext) {
+	// see if trunk, cargo leptos and leptosfmt exists else prompt user for permission to support
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "leptos" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('leptos.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from leptos-vscode!');
-	});
-
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(
+    vscode.commands.registerCommand("leptos.init", leptosInit),
+    vscode.commands.registerCommand("leptos.dev", leptosDev),
+    vscode.commands.registerCommand("leptos.build", leptosBuild),
+    vscode.commands.registerCommand("leptos.fmt", leptosFormat)
+  );
 }
 
 // This method is called when your extension is deactivated
 export function deactivate() {}
+
+
+/**
+ * 
+ * @param args the starter template name 
+ * @ creates a new leptos project
+ */
+function leptosInit(...args: any[]) {
+	throw new Error('Function not implemented.');
+}
+
+/**
+ * 
+ * @param args project path 
+ * run client side renderd app or server side rendered app in 
+ */
+function leptosDev(...args: any[]) {
+	throw new Error('Function not implemented.');
+}
+
+
+function leptosBuild(...args: any[]) {
+	throw new Error('Function not implemented.');
+}
+
+function leptosFormat(...args: any[]) {
+	throw new Error('Function not implemented.');
+}
+
+
+
+function findOrInstallDependencies(){
+	const dependencies  = ["cargo leptos", "trunk", "leposfmt"];
+	for (const dependency in dependencies){
+		if(!commandExists(dependency)){
+			installDependency(dependency);
+		}
+	}
+}
+
+
+function installDependency(dependency: string) {
+const isWin = process.platform === "win32";
+const isDarwin = process.platform === "darwin";
+const isLinux = process.platform === "linux";
+}
+
